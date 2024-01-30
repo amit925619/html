@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <script
+      src="https://kit.fontawesome.com/30fab48f28.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        line-height: 1.5;
+        font-weight: 300;
+      }
+      .logo_container img {
+        height: auto;
+        width: 7vw;
+      }
+      nav {
+        box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.08);
+        position: sticky;
+        top: 0;
+        /* margin-bottom: 32px; */
+        background: white;
+        padding: 5px;
+        z-index: 50;
+      }
+      .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .container {
+        max-width: 1300px;
+        margin: 0 auto;
+      }
+      .bar_icon {
+        font-size: 25px;
+      }
+      .nav_bar ul li {
+        list-style-type: none;
+        display: inline-flex;
+      }
+      .nav_bar ul li a {
+        font-size: 25px;
+        text-decoration: none;
+        margin: 2vw;
+        color: rgb(237, 115, 115);
+      }
+      .nav_bar ul li a:hover {
+        color: rgb(142, 51, 232);
+      }
+      .form {
+        padding: 5vw;
+        text-align: center;
+      }
+      .form h1 {
+        font-weight: 900;
+        font-size: 3vw;
+      }
+      .form p {
+        font-size: 20px;
+      }
+      .ui {
+        margin-left: 35vw;
+        margin-right: 35vw;
+        text-align: center;
+      }
+      .input_fields {
+        text-align: center;
+      }
+
+      .input_fields label {
+        display: block;
+        margin-bottom: 5px;
+        text-align: left; /* Align the label text to the left */
+      }
+
+      .input_fields input,
+      .input_fields select,
+      .input_fields textarea {
+        display: inline-block; /* Set input fields as inline-block to center them */
+        width: 60%; /* Adjust the width as needed */
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        text-align: left; /* Align text inside input fields to the left */
+      }
+      .input_fields input {
+        align-items: center;
+      }
+
+      #submit {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      #submit:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <!--navigation bar-->
+    <nav>
+      <div class="navigation container">
+        <div class="logo_container">
+          <a href="index.html"
+            ><img src="images/logo-removebg-preview.png" alt="logo"
+          /></a>
+        </div>
+        <div class="nav_bar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">Menus</a></li>
+            <li><a href="about1.html">About</a></li>
+            <li><a href="join.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="bar_icon">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="form">
+      <h1>CONTACT US</h1>
+      <p>
+        Send us a message and we’ll get back to you as soon as possible. Looking
+        forward to hearing from you.
+      </p>
+    </div>
+    <div class="ui">
+      <form>
+        <div class="input_fields">
+          <label for="name">First Name<span>*</span></label
+          ><br />
+          <input
+            style="width: 20vw"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+          /><br /><br />
+          <label for="mail">Email</label><br />
+          <input
+            style="width: 20vw"
+            type="email"
+            name="mail"
+            id="mail"
+            placeholder="eg. abc123@gmail.com"
+          /><br /><br />
+
+          <label for="no">Phone Number<span>*</span></label
+          ><br />
+          <input
+            style="width: 20vw"
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="+918929323232"
+          /><br /><br />
+
+          <label for="selectstate">Location<span>*</span></label
+          ><br />
+          <select name="state" id="selectstate" style="width: 20vw">
+            <option value selected disabled>Chosse your Location</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Odisha">Odisha</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Telangana">Telangana</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Uttarakhand">Uttarakhand</option>
+            <option value="West Bengal">West Bengal</option>
+            <option value="Andaman and Nicobar Islands">
+              Andaman and Nicobar Islands
+            </option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Dadra and Nagar Haveli and Daman and Diu">
+              Dadra and Nagar Haveli and Daman and Diu
+            </option>
+            <option value="Lakshadweep">Lakshadweep</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Puducherry">Puducherry</option></select
+          ><br /><br />
+
+          <label for="reason"
+            >What are you getting in touch about?<span>*</span></label
+          ><br />
+          <select name="reason" id="reason" style="width: 20vw">
+            <option value selected disabled>Select your reason</option>
+            <option value="General enuiry">GENERAL INQUIRY</option>
+            <option value="">CATERING</option>
+            <option value="">FOOD SUGGESTION</option>
+            <option value="">MEDIA INQUIRY</option>
+            <option value="">ORDER ISSUE</option></select
+          ><br /><br />
+          <label for="msg">Your Message<span>*</span></label
+          ><br />
+          <textarea name="message" id="msg" cols="50" rows="10" placeholder="Your message..."></textarea
+          ><br /><br />
+          <input type="submit" name="submit" id="submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

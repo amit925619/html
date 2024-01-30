@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <script
+      src="https://kit.fontawesome.com/30fab48f28.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        line-height: 1.5;
+        font-weight: 300;
+      }
+      .logo_container img {
+        height: auto;
+        width: 7vw;
+      }
+      nav {
+        box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.08);
+        position: sticky;
+        top: 0;
+        margin-bottom: 32px;
+        background: white;
+        padding: 5px;
+        z-index: 50;
+      }
+      .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .container {
+        max-width: 1300px;
+        margin: 0 auto;
+      }
+      .bar_icon {
+        font-size: 25px;
+      }
+      .nav_bar ul li {
+        list-style-type: none;
+        display: inline-flex;
+      }
+      .nav_bar ul li a {
+        font-size: 25px;
+        text-decoration: none;
+        margin: 2vw;
+        color:#000000;
+      }
+      .nav_bar ul li a:hover {
+        color: rgb(142, 51, 232);
+      }
+      nav {
+        background-color: #ffd700;
+      }
+      body {
+        background-color: #ffd700;
+      }
+      .main {
+        background-image: url(images/bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 40vw;
+      }
+      .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #ffffff;
+      }
+      .main h1 {
+        color: white;
+        font-size: 90px;
+        font-weight: 100;
+      }
+      .main p {
+        color: #ffffff;
+        font-size: 20px;
+      }
+      .images {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+      }
+      .img1 {
+        padding: 2vw;
+        width: 50%;
+        height: 50%;
+        text-align: center;
+        margin-top: 1vw;
+      }
+      .img2 {
+        text-align: center;
+        padding: 2vw;
+        width: 50%;
+        height: 50%;
+      }
+      .img1 img {
+        /* border-radius: 10px; */
+        width: 70%;
+        height: 70%;
+      }
+      .img2 img {
+        /* border-radius: 10px; */
+        width: 70%;
+        height: 70%;
+      }
+      .img1 h2 {
+        text-align: center;
+        font-size: 50px;
+        font-weight: 100;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      .img2 h2 {
+        text-align: center;
+        font-size: 50px;
+        font-weight: 100;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      .img1 p {
+        text-align: center;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      .img2 p {
+        text-align: center;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      button {
+        border: 2px solid #ffd700;
+        color: #ffd700;
+        background-color: black;
+        font-size: 30px;
+      }
+      button:hover {
+        background-color: #ffd700;
+        color: black;
+      }
+      .main button {
+        margin-top: 3vw;
+      }
+      .img1 button {
+        border: 2px solid black;
+        background-color: #ffd700;
+        color: black;
+        font-size: 20px;
+        margin-top: 1vw;
+      }
+      .img1 button:hover {
+        background-color: black;
+        color: #ffd700;
+      }
+      .img2 button {
+        border: 2px solid black;
+        background-color: #ffd700;
+        color: black;
+        font-size: 20px;
+        margin-top: 1vw;
+      }
+      .img2 button:hover {
+        background-color: black;
+        color: #ffd700;
+      }
+      .menu {
+        margin-top: 3vw;
+        display: flex;
+      }
+      .para {
+        text-align: center;
+        color: black;
+      }
+      .para h2 {
+        font-size: 3vw;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      .para p {
+        padding: 3vw;
+        font-size: 20px;
+      }
+      .img3 img {
+        width: 62vw;
+      }
+      .peep {
+        border: 2px solid black;
+        background-color: #ffd700;
+        color: black;
+        font-size: 20px;
+        margin-top: 1vw;
+      }
+      .peep:hover {
+        background-color: black;
+        color: #ffd700;
+      }
+      .menu2 {
+        margin-top: 1vw;
+        display: flex;
+      }
+      .img4 img {
+        height: 80%;
+        width: 100%;
+      }
+      .img4 {
+        height: 100%;
+        width: 60%;
+      }
+      .para3 {
+        margin-top: 10vw;
+        height: 100%;
+        width: 40%;
+      }
+      .para3 h2 {
+        text-align: center;
+        font-size: 3vw;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      .para3 p {
+        margin-right: vw;
+        padding: 5vw;
+        font-size: 20px;
+      }
+      .cate {
+        border: 2px solid black;
+        background-color: #ffd700;
+        color: black;
+        font-size: 20px;
+        margin-top: 1vw;
+        align-items: center;
+      }
+      .cate:hover {
+        background-color: black;
+        color: #ffd700;
+      }
+      img {
+      transition: transform 0.3s ease-in-out; /* Add transition property */
+    }
+    img:hover {
+      transform: scale(1.1); /* Increase the scale for a slight zoom effect */
+    }
+    </style>
+  </head>
+  <body>
+    <!--navigation bar-->
+    <nav>
+      <div class="navigation container">
+        <div class="logo_container">
+          <a href="index.html"
+            ><img src="images/logo-removebg-preview.png" alt="logo"
+          /></a>
+        </div>
+        <div class="nav_bar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">Menus</a></li>
+            <li><a href="about1.html">About</a></li>
+            <li><a href="join.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="bar_icon">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <div class="main">
+      <div class="text">
+        <h1>Lunch Happy Tour</h1>
+        <p>
+          Take a lunch break in the new dining room! Monday-Friday from 11:30AM-
+          5PM, we're pouring $3 Draft Beers (yes, we have draft beer
+          now),Half-priced Share, and our new "One Step" lunch platter. Tell
+          your friends and click below to see what's on tap
+        </p>
+        <button>Lunch Time</button>
+      </div>
+    </div>
+    <section class="images">
+      <div class="img1">
+        <img src="images/a1.jpg" alt="" />
+        <h2>Specials</h2>
+        <p>
+          Pitmaster Rob is always up to something! Check out our rotating
+          specialty sandwiches and limited drops. Dino Beef Short Rib Combo for
+          2 is available every Monday & Tuesday.
+        </p>
+        <button>See the Specials</button>
+      </div>
+      <div class="img2">
+        <img src="images/a2.jpeg" alt="" />
+        <h2>SUPPER CLUB</h2>
+        <p>
+          Once a month, Chef & Pitmaster Rob Sonderman presents a new 4-course
+          dine-in experience that goes beyond our regular offerings and puts a
+          smoky spin on gourmet cu
+        </p>
+        <button>Get your tickets</button>
+      </div>
+    </section>
+    <div class="menu">
+      <div class="para">
+        <h2>MENU</h2>
+        <p>
+          <b
+            >We’re craft American BBQ made in-house (always). Get traditions and
+            favorites from all over the world — all on one plate. Federalist Pig
+            is a two-time Michelin Bib Gourmand winner serving up DC’s best
+            blend of the classic BBQ traditions you’d find at the most elite
+            cookout and the elevated flavors you’d find at a true fine dining
+            spot.
+            <br />
+            Everything we serve is house-made and prepared by a staff that
+            cares. You could spend a lifetime sampling every flavor combination
+            at Federalist Pig, and we hope you do.</b
+          >
+        </p>
+        <button class="peep">PEEP THE MENU</button>
+      </div>
+
+      <div class="img3">
+        <img src="images/a3.jpg" alt="" />
+      </div>
+    </div>
+    <section>
+      <div class="menu2">
+        <div class="img4">
+          <img src="images/a4.jpg" alt="" />
+        </div>
+        <div class="para3">
+          <h2>CATERING</h2>
+          <p>
+            <b>
+              We'll bring the 'que to you! From backyard BBQs, holiday
+              celebrations or hundred-person events, our Barbecrew and catering
+              truck can do it all. Serving thoughtfully crafted sides, vegan and
+              vegetarian options, to the BBQ classics from all the regions of
+              America, and all the corners of the globe — it’s all here.
+            </b>
+            <br>&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;<button class="cate">EXPLORE CATERING</button>
+          </p>
+          
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
