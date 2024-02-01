@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us</title>
+    <title>Menu</title>
+    <link rel="icon" type="images/x-icon" href="icons/favicon.png">
     <script
       src="https://kit.fontawesome.com/30fab48f28.js"
       crossorigin="anonymous"
@@ -52,7 +53,7 @@
         font-size: 25px;
         text-decoration: none;
         margin: 2vw;
-        color:#000000;
+        color: #000000;
       }
       .nav_bar ul li a:hover {
         color: rgb(142, 51, 232);
@@ -249,11 +250,79 @@
         color: #ffd700;
       }
       img {
-      transition: transform 0.3s ease-in-out; /* Add transition property */
-    }
-    img:hover {
-      transform: scale(1.1); /* Increase the scale for a slight zoom effect */
-    }
+        transition: transform 0.3s ease-in-out;
+      }
+      img:hover {
+        transform: scale(1.1);
+      }
+      
+      @media (max-width: 786px) {
+  .text {
+    text-align: center;
+    position: relative;
+    padding: 10px;
+  }
+
+  .text h1 {
+    font-size: 4vw;
+    margin: 0;
+    padding: 0;
+  }
+
+  .text p {
+    font-size: 15px;
+    margin-top: 10px; /* Adjusted margin for spacing */
+  }
+
+  .text h1,
+  .text p {
+    position: relative;
+    width: 100%;
+    display: block;
+  }
+
+  .main button {
+    margin-top: 2vw;
+  }
+  .img3 img{
+    margin-top: 27vw;
+    width: 50vw;
+  }
+  .para p{
+    font-size: small;
+  }
+.img4 img{
+  margin-top: 27vw;
+  width: 50vw;
+}
+.para3 p{
+font-size: small;
+}
+.img2 h2{
+  font-size: 5vw;
+}
+.img1 h2{
+  font-size: 5vw;
+}
+.nav_bar ul li {
+    display: inline; /* Change to block to make items appear in a single column */
+    justify-content: space-between;
+    text-align: center;
+    gap: 4vw;
+    margin-bottom: 10px; /* Adjusted margin for spacing between items */
+  }
+
+  .nav_bar ul li a {
+    margin: 0;
+    font-size: 18px; /* Adjusted font size for better readability */
+  }
+
+  .menu2 {
+    flex-direction: row; /* Change to column for items to appear in a single column */
+    align-items: center;
+  }
+}
+
     </style>
   </head>
   <body>
@@ -268,7 +337,7 @@
         <div class="nav_bar">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about_us.html">Menus</a></li>
+            <li><a href="about_us.html">Menu</a></li>
             <li><a href="about1.html">About</a></li>
             <li><a href="join.html">Contact Us</a></li>
           </ul>
@@ -351,9 +420,12 @@
               vegetarian options, to the BBQ classics from all the regions of
               America, and all the corners of the globe — it’s all here.
             </b>
-            <br>&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;<button class="cate">EXPLORE CATERING</button>
+            <br />&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;&numsp;<button
+              class="cate"
+            >
+              EXPLORE CATERING
+            </button>
           </p>
-          
         </div>
       </div>
     </section>
